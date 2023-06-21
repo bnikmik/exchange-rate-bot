@@ -15,6 +15,10 @@
 	<description>Official exchange rate telegram bot</description>
 	<properties>
 		<java.version>11</java.version>
+		<lombok.version>1.18.24</lombok.version>
+		<telegram.version>6.5.0</telegram.version>
+		<okhttp.version>4.10.0</okhttp.version>
+		<guava.version>32.0.1-jre</guava.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -27,6 +31,33 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>${lombok.version}</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.telegram</groupId>
+			<artifactId>telegrambots</artifactId>
+			<version>${telegram.version}</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.squareup.okhttp3</groupId>
+			<artifactId>okhttp</artifactId>
+			<version>${okhttp.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>${guava.version}</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
